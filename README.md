@@ -8,6 +8,11 @@
 * Adobe Photoshop CC 2017 （Windows10、OSX El Capitan(v10.11.6)）
 
 
+## 解説サイト（※制作中）
+
+[[Photoshop][JSX] Photoshopでプロトタイピング用のhtmlを生成するスクリプト「SwitchImageMapAndImgGenerator」 | これを読めば思い出す](http://www.koreyome.com/web/photoshop-jsx-switchimagemapandimggenerator/)
+
+
 ## 注意 （cautionn）
 
 * 本プログラムご使用は自己責任でお願いいたします
