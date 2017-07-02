@@ -1,0 +1,222 @@
+@charset "UTF-8";
+/************************************************************************************
+ RESET
+*************************************************************************************/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a:focus { outline:none; }
+.both{ clear:both; }
+.inline-block { display: inline-block; *display: inline; *zoom: 1; }
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.clearfix { display: inline-block; }
+.clearfix { display: block; zoom: 1; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+.video embed,
+.video object,
+.video iframe,
+video {
+	width: 96%;
+}
+
+/************************************************************************************
+ GENERAL SETTING
+*************************************************************************************/
+body {
+	font: 16px/1.8 "Helvetica Neue",Helvetica,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",Arial,sans-serif;
+	color: #333;
+}
+
+a {
+	color: #5EA6E9;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #96C4EB;
+}
+
+a:hover img {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	-ms-filter: "alpha(opacity=70)";
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+h1 { font-size: 200%; }
+h2 { font-size: 160%; }
+h3 { font-size: 140%; }
+h4 { font-size: 120%; }
+h5 { font-size: 110%; }
+h6 { font-size: 100%; }
+
+small { font-size: small; }
+
+::selection { background: #b8ddff; } /* Safari */
+::-moz-selection { background: #b8ddff; } /* Firefox */
+
+.orange { color: #ff6920; }
+.pink { color: #ff1e92; }
+
+.alignleft { float: left; }
+.alignright { float: right; }
+
+ol.ol-zero-decimal {
+	list-style-type: decimal-leading-zero;
+}
+ul.type-disc {
+	list-style-type: disc;
+}
+
+.disp-block { display: block; }
+
+.mt5 { margin-top: 5px; }
+.mt10 { margin-top: 10px; }
+.mt15 { margin-top: 15px; }
+.mt20 { margin-top: 20px; }
+.mt25 { margin-top: 25px; }
+.mt30 { margin-top: 30px; }
+
+.mb5 { margin-bottom: 5px; }
+.mb10 { margin-bottom: 10px; }
+.mb15 { margin-bottom: 15px; }
+.mb20 { margin-bottom: 20px; }
+.mb25 { margin-bottom: 25px; }
+.mb30 { margin-bottom: 30px; }
+
+.ml5 { margin-left: 5px; }
+.ml10 { margin-left: 10px; }
+.ml15 { margin-left: 15px; }
+.ml20 { margin-left: 20px; }
+.ml25 { margin-left: 25px; }
+.ml30 { margin-left: 30px; }
+
+.mr5 { margin-right: 5px; }
+.mr10 { margin-right: 10px; }
+.mr15 { margin-right: 15px; }
+.mr20 { margin-right: 20px; }
+.mr25 { margin-right: 25px; }
+.mr30 { margin-right: 30px; }
+
+.pt5 { padding-top: 5px; }
+.pt10 { padding-top: 10px; }
+.pt15 { padding-top: 15px; }
+.pt20 { padding-top: 20px; }
+.pt25 { padding-top: 25px; }
+.pt30 { padding-top: 30px; }
+
+.pb5 { padding-bottom: 5px; }
+.pb10 { padding-bottom: 10px; }
+.pb15 { padding-bottom: 15px; }
+.pb20 { padding-bottom: 20px; }
+.pb25 { padding-bottom: 25px; }
+.pb30 { padding-bottom: 30px; }
+
+.pl5 { padding-left: 5px; }
+.pl10 { padding-left: 10px; }
+.pl15 { padding-left: 15px; }
+.pl20 { padding-left: 20px; }
+.pl25 { padding-left: 25px; }
+.pl30 { padding-left: 30px; }
+
+.pr5 { padding-right: 5px; }
+.pr10 { padding-right: 10px; }
+.pr15 { padding-right: 15px; }
+.pr20 { padding-right: 20px; }
+.pr25 { padding-right: 25px; }
+.pr30 { padding-right: 30px; }
+
+.b24 { font-size: 150%; font-weight: bold; }
+.b25 { font-size: 153.60%; font-weight: bold; }
+.b26 { font-size: 162.50%; font-weight: bold; }
+.b27 { font-size: 168.80%; font-weight: bold; }
+.b28 { font-size: 175%; font-weight: bold; }
+.b29 { font-size: 181.30%; font-weight: bold; }
+.b30 { font-size: 187.50%; font-weight: bold; }
+.b31 { font-size: 193.80%; font-weight: bold; }
+.b32 { font-size: 200%; font-weight: bold; }
+.b33 { font-size: 206.30%; font-weight: bold; }
+.b34 { font-size: 212.50%; font-weight: bold; }
+.b35 { font-size: 218.80%; font-weight: bold; }
+
+/************************************************************************************
+ style
+*************************************************************************************/
+
+body {
+	color: #333;
+}
+
+#wrapper {
+	margin: 20px;
+	word-wrap: break-word;
+}
+
+h1 {
+	border-bottom: solid 1px #ddd;
+}
+
+h2 {
+	margin-top: 30px;
+}
+
+ul.type-disc {
+	margin: 0 0 30px 30px;
+	font-size: 87.50%; /* 14px */
+}
+
+#imageMapArea {
+	margin-bottom: 30px;
+}
+
+#targetImage {
+
+}
+
+#targetMap {
+	
+}
+
+area {
+	cursor: pointer;
+	display: block;
+}

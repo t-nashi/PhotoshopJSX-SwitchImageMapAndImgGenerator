@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!-- disable iPhone inital scale -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SwitchImageMapAndImgGenerator</title>
+<!-- link file -->
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="js/functions.js"></script>
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<!--
+ * ==================================================
+ * PhotoshopJSX-SwitchImageMapAndImgGenerator
+ * 
+ * Author: Tsutomu Takanashi
+ * Copyright (c) 2017 Tsutomu Takanashi
+ * 
+ * Project home:
+ * 	https://github.com/t-nashi/PhotoshopJSX-SwitchImageMapAndImgGenerator
+ * 
+ * Blog page:
+ * 	http://www.koreyome.com/web/photoshop-jsx-switchimagemapandimggenerator/
+ * 
+ * This software is released under the MIT License:
+ * 	https://opensource.org/licenses/mit-license.php
+ * ==================================================
+-->
+<style>
+/* CSS */
+</style>
+<script>
+/* JavaScript*/
+</script>
+</head>
+<body>
+<div id="wrapper">
+	<!-- 画像とマップが配置される場所 -->
+	<div id="imageMapArea">
+		<img src="" alt="差し替え対象の画像" id="targetImage" useMap="#map" class="map">
+		<map id="targetMap" name="map"><!--//--></map>
+	</div>
+
+	<header>
+		<h1>SwitchImageMapAndImgGenerator</h1>
+	</header>
+	<div id="content">
+		<p class="mt10 mb30">
+			Photoshop から気軽にプロトタイピングするためのツールです。<br>
+			特定のルールに基づいて作成された psdデータ をテンプレート内のコードと共に jsx 処理時のフォルダ内にパッケージ化します。<br>
+			画像内のリンクはイメージマップ、画像の切り替えはjsを使用しています。<br>
+			サンプルデータ(psd)を用意していますので、ご活用ください。
+		</p>
+
+		<h2>Photoshop Document Rule</h2>
+		<p>jsxを利用する際、対象となるドキュメントは以下のルールに沿ってデータを作成してある必要がある</p>
+		<p>-----</p>
+		<p><small>下記使用略称： ※A … 第一階層にある特定の値を持つレイヤーセット</small></p>
+		<p><small>下記使用略称： ※B … 第一階層内、第二階層にあるシェイプ</small></p>
+		<ul class="type-disc pt30">
+			<li>jsx処理の対象となるドキュメントはPhotoshop上でjsx実行時にアクティブになっているドキュメントである</li>
+			<li>※A が画像として書き出される <small>（デフォルトでは特定の値は「@@@」、画像形式はjpg - png、gifにも切り替え可）</small></li>
+			<li>※A は名前に関係なくレイヤーパネル内の上から順に 「1、2、3、4、5、、、」 と処理的に番号付けされる （なので「@@@1、@@@2、、、」と名前を付けると分かりやすい）</li>
+			<li>※B はリンクを設置したいレイヤーセット内に作成する （矩形が望ましい）</li>
+			<li>※B の名前は画像として書き出される ※A の順番と紐付けると、jsx処理後に生成されるhtml上でその画像に対してのリンクとなる</li>
+		</ul>
+
+		<h2>[Check OK] Photoshop Version</h2>
+		<ul class="type-disc">
+			<li>Win: CC2017.1.1 (20170425.r.252 x64)</li>
+			<li>Mac: CC2017.1.1 (20170425.r.252 x64)</li>
+		</ul>
+
+		<h2>[Check OK] Web Browser</h2>
+		<ul class="type-disc">
+			<li>Win: Chrome - x64 （59.0.3071.115）</li>
+			<li>Win: Firefox - x32 (54.0.1)</li>
+			<li>Win: Edge (40.15063.0.0)</li>
+			<li>Mac: Chrome - x64 （58.0.3029.110）</li>
+			<li>Mac: Firefox - x64 (54.0)</li>
+			<li>Mac: Safari (10.1.1)</li>
+		</ul>
+
+		<h2>Author</h2>
+		<ul class="type-disc">
+			<li>Author: <a href="http://www.koreyome.com/about/">Tsutomu Takanashi</a></li>
+			<li>Project home: <a href="https://github.com/t-nashi/PhotoshopJSX-SwitchImageMapAndImgGenerator">https://github.com/t-nashi/PhotoshopJSX-SwitchImageMapAndImgGenerator</a></li>
+			<li>Blog page: <a href="http://www.koreyome.com/web/photoshop-jsx-switchimagemapandimggenerator/">http://www.koreyome.com/web/photoshop-jsx-switchimagemapandimggenerator/</a></li>
+			<li>Copyright (c) 2017+ Tsutomu Takanashi</li>
+		</ul>
+	</div>
+
+</div><!-- /#wrapper -->
+</body>
+</html>
