@@ -1,0 +1,2 @@
+# PhotoshopJSX-SwitchImageMapAndImgGenerator
+【PhotoshopJSX】特定のルールに基づいて作成されたドキュメントから画像とイメージマップを生成するスクリプト
