@@ -2,20 +2,32 @@
 
 このプログラムは [Adobe Photoshop](http://www.adobe.com/jp/products/photoshop.html) で動作する JavaScript(JSX) です。
 特定のルールに基づいて作成されたドキュメントを開いた状態で本JSXファイルを実行すると、プログラムと同階層に実行日時のフォルダが作成され、中にプロトタイピング用のhtmlファイル一式と画像が生成されます。
+<br><br><br>
+
+
 
 ▽動作確認済み
 * Adobe Photoshop CC 2015 （Windows10）
 * Adobe Photoshop CC 2017 （Windows10、OSX El Capitan(v10.11.6)）
+<br><br><br>
+
+
 
 
 ## 解説サイト（※制作中）
 
 [Photoshopを使って手軽にPC向けプロトタイピングをするツールを作った | これを読めば思い出す](http://www.koreyome.com/web/photoshop-jsx-switchimagemapandimggenerator/)
+<br><br><br>
+
+
 
 
 ## 注意 （cautionn）
 
 * 本プログラムご使用は自己責任でお願いいたします
+<br><br><br>
+
+
 
 
 ## インストール （Installation）
@@ -23,6 +35,9 @@
 1. このページの `Clone or download` ボタンよりリポジトリのクローンもしくはZIPダウンロードをします。
 2. ZIPダウンロードの場合は解凍をします。
 3. 解凍して出来たフォルダの中に「`SwitchImageMapAndImgGenerator.jsx`」があれば完了です。
+<br><br><br>
+
+
 
 
 ## 使用法 （Usage）
@@ -32,6 +47,9 @@
 JSXファイルと同階層に「sampleA.psd」と「sampleB.psd」を用意しています。
 それぞれ、特定のルールに基づいて作成されたpsdですので、どちらかをPhotoshopで開き、JSXファイルを実行すると実行日時のフォルダが作成され、中にプロトタイピング用のhtmlファイル一式と画像が生成されます。
 生成されたindex.htmlをお好きなブラウザで開いて結果を確認できれば成功です。
+<br><br><br>
+
+
 
 
 ## 仕様 (specification)
@@ -48,6 +66,9 @@ JSXファイルと同階層に「sampleA.psd」と「sampleB.psd」を用意し�
 
 上記使用略称： ※A … 第一階層にある特定の値を持つレイヤーセット  
 上記使用略称： ※B … 第一階層内、第二階層にあるシェイプ
+<br><br><br>
+
+
 
 
 ## コピーライト （Copyright）
